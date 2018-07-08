@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './pictures-list.css';
+import PictureUpload from "./picture-upload";
 
 interface IPicturesListState{
     picSrcList:string[]
@@ -13,7 +14,7 @@ class PicturesList extends React.PureComponent<{}, IPicturesListState> {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         this.setPictures();
     }
 
@@ -32,7 +33,10 @@ class PicturesList extends React.PureComponent<{}, IPicturesListState> {
        });
 
         return (
-            <div className="pic-list">{list}</div>
+            <div className="pic-list">
+                <PictureUpload setPicturesList={this.setPictures}/>
+                {list}
+            </div>
         );
     }
 }

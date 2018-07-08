@@ -3,7 +3,6 @@
     grid-template-columns: repeat(5, 1fr);
     max-width: 200px;
     width: 100%;
-    column-gap: 0.5em;
 }
 
 .pic{
@@ -12,6 +11,3 @@
     height: 17em;
     text-align: center;
 }
-
-
-
