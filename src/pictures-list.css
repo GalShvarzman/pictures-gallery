@@ -1,0 +1,17 @@
+.pic-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 200px;
+    width: 100%;
+    column-gap: 0.5em;
+}
+
+.pic{
+    padding: 20px;
+    width: 15em;
+    height: 17em;
+    text-align: center;
+}
+
+
+
